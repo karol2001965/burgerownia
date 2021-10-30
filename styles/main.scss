@@ -1,0 +1,198 @@
+main{
+    width: 100%;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+hr {
+    height: 10px;
+    width: 100%;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0 10px 8px -1px #E0251B inset;
+  }
+
+
+.header{
+height: 120px;
+width: 100%;
+font-size: 3rem;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+border-bottom:5px solid #F74C1D;
+border-top:5px solid #F74C1D;
+box-sizing: border-box;
+font-weight: 1000;
+}
+
+.sections{
+width: 80%;
+
+}
+.section_name{
+
+.option_container{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-content: space-around;
+}
+
+.option{
+    height: 370px;
+    width: 279px;
+padding: 20px;
+background: white;
+border-radius: 10px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-direction: column;
+background-color: #FCA425;
+box-shadow:0px 0px 25px white;
+margin-bottom: 45px;
+
+.option_name_price{
+    text-align: left;
+    width: 100%;
+
+    .head_price{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+
+  .line_drinks{
+    height: 5px;
+    }
+img{
+    height: 46%;
+
+    }
+}
+
+.bottom{
+height: unset;
+width: 100%;
+}
+
+
+
+header{
+height: 100px;
+width: 100%;
+color: white;
+background-color: black;
+justify-content: center;
+align-items: center;
+display: flex;
+font-size: 2.5rem;
+font-weight: 1000;
+position: relative;
+margin: 20px 0 20px 0;
+}
+header:before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 30%;
+    background: red;
+transform: translate(-100%,0);
+}
+header:after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 30%;
+    background: red;
+transform: translate(100%,0);
+
+}
+
+
+
+
+
+//media
+
+
+@media(max-width: 590px){
+    .sections{
+        width: 60%;
+        }
+        .option{
+        width: 75%;
+        }
+        .option img{
+            height: unset;
+            width: 100%;
+        }
+}
+@media(max-width: 768px){
+.bottom{
+    width: 90%;
+}
+
+.option_container{
+justify-content: center;
+}
+header:before{
+    transform: translate(-140%,0);
+}
+header:after{
+    transform: translate(140%,0);
+}
+
+}
+
+//komputery
+
+@media(min-width: 768px){
+.option{
+    font-size: 1.2rem;
+}
+}
+
+//inne
+
+@media(max-width: 1213px)and (min-width: 769px){
+    .option_container{
+        justify-content: space-evenly;
+    }
+
+}
+
+
+
+//safari
+@media not all and (min-resolution:.001dpcm) { @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+
+    @media(max-width: 320px){
+        header:after{
+            transform: translate(160%,-22px);
+            display: block;
+        }
+    }
+    @media(min-width: 321px) and (max-width:768px){
+        header:after{
+            transform: translate(145%,-22px);
+            display: block;
+        }
+    }
+} }
+
+
+.drinks{
+    width: 100%;
+    height: unset;
+}
+
+}
